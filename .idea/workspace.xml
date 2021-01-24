@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4de3b93a-9f64-4b88-98b7-b146fd8bb3a2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.4/libexec" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1nQ5vska3j6tde1qL5DJK8OLGhq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/executors" />
+      <recent name="$PROJECT_DIR$/cmd" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/caller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.go test goshm">
+    <configuration name="go build goshm/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="goshm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="fetch --code=ASII --date_from=&quot;20-12-2020&quot; --date_to=&quot;25-12-2020&quot;" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/goshm.go" />
+      <package value="goshm/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCall in goshm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="goshm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="goshm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCall\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCsvWriter_GetFilename in goshm/writer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="goshm" />
+      <working_directory value="$PROJECT_DIR$/writer" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="goshm/writer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCsvWriter_GetFilename\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGoShm_Fetch in goshm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="goshm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="goshm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestGoShm_Fetch\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGoShm_SetHttpClient in goshm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="goshm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="goshm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestGoShm_SetHttpClient\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test goshm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="goshm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="goshm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build goshm/cmd" />
+      <item itemvalue="Go Test.TestCall in goshm" />
+      <item itemvalue="Go Test.TestGoShm_Fetch in goshm" />
+      <item itemvalue="Go Test.TestCsvWriter_GetFilename in goshm/writer" />
+      <item itemvalue="Go Test.TestGoShm_SetHttpClient in goshm" />
+      <item itemvalue="Go Test.go test goshm" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.go test goshm" />
+        <item itemvalue="Go Test.TestGoShm_SetHttpClient in goshm" />
+        <item itemvalue="Go Test.TestCsvWriter_GetFilename in goshm/writer" />
+        <item itemvalue="Go Test.TestGoShm_Fetch in goshm" />
+        <item itemvalue="Go Test.TestCall in goshm" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="365" key="#Go_Modules" timestamp="1611310961199">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="640" y="365" key="#Go_Modules/0.0.1680.1050@0.0.1680.1050" timestamp="1611310961199" />
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611381477326">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1611381477326" />
+    <state x="627" y="237" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1611379688964">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="627" y="237" key="#com.intellij.ide.macro.MacrosDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1611379688964" />
+    <state width="579" height="466" key="DebuggerActiveHint" timestamp="1611385485948">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="579" height="466" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1611385485948" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1611473169672">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1611473169672" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1611473169669">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1611473169669" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1611473169668">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1611473169668" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1611473169671">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1611473169671" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1611391969582">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1611391969582" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1611391969579">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1611391969579" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1611391969579">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1611391969579" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1611391969580">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1611391969580" />
+    <state width="840" height="594" key="XDebugger.FullValuePopup" timestamp="1611381431737">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="840" height="594" key="XDebugger.FullValuePopup/0.0.1680.1050@0.0.1680.1050" timestamp="1611379795571" />
+    <state width="840" height="594" key="XDebugger.FullValuePopup/0.23.1680.988@0.23.1680.988" timestamp="1611381431737" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/goshm$TestGoShm_Fetch_in_goshm.out" NAME="TestGoShm_Fetch in goshm Coverage Results" MODIFIED="1611389941099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/goshm$TestCall_in_goshm.out" NAME="TestCall in goshm Coverage Results" MODIFIED="1611389882597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/goshm$go_test_goshm.out" NAME="go test goshm Coverage Results" MODIFIED="1611473163006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
