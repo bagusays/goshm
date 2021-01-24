@@ -3,8 +3,8 @@ package executors
 import (
 	"context"
 	"goshm/caller"
+	"goshm/exporter"
 	"goshm/models"
-	"goshm/writer"
 	"net/http"
 	"time"
 )
@@ -14,10 +14,10 @@ type GoShm struct {
 }
 
 func New() *GoShm {
-	return &GoShm{httpClient: &http.Client{ Timeout: 5 * time.Second }}
+	return &GoShm{httpClient: &http.Client{Timeout: 5 * time.Second}}
 }
 
-func (n *GoShm) Fetch(platform caller.Caller, args models.FetchArgs, writer writer.Writer) error {
+func (n *GoShm) Fetch(platform caller.Caller, args models.FetchArgs, writer exporter.Exporter) error {
 	resp, err := platform.Get(context.Background(), n.httpClient, args)
 	if err != nil {
 		return err

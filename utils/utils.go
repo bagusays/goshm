@@ -6,7 +6,7 @@ import (
 )
 
 var argsExpectedFormatDate = "02-01-2006"
-var	callerFormatDate = "01/02/2006"
+var callerFormatDate = "01/02/2006"
 
 func FromArgToUnixDateFormatter(date string) (*time.Time, error) {
 	dateInTime, err := time.Parse(argsExpectedFormatDate, date)

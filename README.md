@@ -14,6 +14,7 @@ $ chmod +x goshm
 ```
 
 ## Usage
+
 ```
 $ ./goshm fetch --code=ASII --date_from="20-12-2020" --date_to="25-12-2020"
 ```
@@ -23,9 +24,22 @@ or for multiple code
 $ ./goshm fetch --code=ASII,TLKM --date_from="20-12-2020" --date_to="25-12-2020"
 ```
 
-## Roadmap Features
-- [ ] JSON Exporter
+Extended Flag Descriptions
+--------------------------
 
+The following descriptions provide additional elaboration on a few common parameters.
+
+| flag name  | description  |
+|---|---|
+| `--code`  | The `--code` option takes the code for "emiten". |
+| `--date_from`  | Should following this format dd/mm/yyyy. |
+| `--date_to`  |  Should following this format dd/mm/yyyy. |
+| `--output` | Generates files from the result. For now you can export either to `csv` or `json` |
+
+## Roadmap Features
+- [ ] ??
+- [ ] ??
+- [ ] ...
 
 <!-- CONTRIBUTING -->
 ## Contributing

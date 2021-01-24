@@ -2,24 +2,25 @@ package caller
 
 import (
 	"context"
-	"github.com/stretchr/testify/assert"
 	"goshm/models"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCall(t *testing.T) {
 	testCases := []struct {
-		Name string
+		Name          string
 		NotMockServer bool
-		MockRespBody []byte
-		ExpectedResp *[]models.CallResponse
+		MockRespBody  []byte
+		ExpectedResp  *[]models.CallResponse
 		ExpectedError bool
 	}{
 		{
-			Name: "Success",
+			Name:         "Success",
 			MockRespBody: []byte("[[1595808000000,5075.0000,5150.0000,5025.0000,5125.0000,17645200]]"),
 			ExpectedResp: &[]models.CallResponse{
 				{
@@ -32,39 +33,39 @@ func TestCall(t *testing.T) {
 			},
 		},
 		{
-			Name: "connection refused",
+			Name:          "connection refused",
 			NotMockServer: true,
-			MockRespBody: []byte(""),
+			MockRespBody:  []byte(""),
 			ExpectedError: true,
 		},
 		{
-			Name: "Unexpected body response",
-			MockRespBody: []byte("unexpected response"),
+			Name:          "Unexpected body response",
+			MockRespBody:  []byte("unexpected response"),
 			ExpectedError: true,
 		},
 		{
-			Name: "unexpected idx 0",
-			MockRespBody: []byte(`[["unexpected",5075.0000,5150.0000,5025.0000,5125.0000,17645200]]`),
+			Name:          "unexpected idx 0",
+			MockRespBody:  []byte(`[["unexpected",5075.0000,5150.0000,5025.0000,5125.0000,17645200]]`),
 			ExpectedError: true,
 		},
 		{
-			Name: "unexpected idx 1",
-			MockRespBody: []byte(`[[1595808000000,"unexpected",5150.0000,5025.0000,5125.0000,17645200]]`),
+			Name:          "unexpected idx 1",
+			MockRespBody:  []byte(`[[1595808000000,"unexpected",5150.0000,5025.0000,5125.0000,17645200]]`),
 			ExpectedError: true,
 		},
 		{
-			Name: "unexpected idx 2",
-			MockRespBody: []byte(`[[1595808000000,5075.0000,"unexpected",5025.0000,5125.0000,17645200]]`),
+			Name:          "unexpected idx 2",
+			MockRespBody:  []byte(`[[1595808000000,5075.0000,"unexpected",5025.0000,5125.0000,17645200]]`),
 			ExpectedError: true,
 		},
 		{
-			Name: "unexpected idx 3",
-			MockRespBody: []byte(`[[1595808000000,5075.0000,5150.0000,"unexpected",5125.0000,17645200]]`),
+			Name:          "unexpected idx 3",
+			MockRespBody:  []byte(`[[1595808000000,5075.0000,5150.0000,"unexpected",5125.0000,17645200]]`),
 			ExpectedError: true,
 		},
 		{
-			Name: "unexpected idx 4",
-			MockRespBody: []byte(`[[1595808000000,5075.0000,5150.0000,5025.0000,"unexpected",17645200]]`),
+			Name:          "unexpected idx 4",
+			MockRespBody:  []byte(`[[1595808000000,5075.0000,5150.0000,5025.0000,"unexpected",17645200]]`),
 			ExpectedError: true,
 		},
 	}

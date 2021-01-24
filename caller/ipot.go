@@ -70,7 +70,7 @@ func (i *ipot) Get(ctx context.Context, httpClient *http.Client, args models.Fet
 			return nil, err
 		}
 		result = append(result, models.CallResponse{
-			Date:   time,
+			Date:       time,
 			OpenPrice:  strconv.FormatFloat(openPrice, 'f', 0, 64),
 			ClosePrice: strconv.FormatFloat(closePrice, 'f', 0, 64),
 			HighPrice:  strconv.FormatFloat(highPrice, 'f', 0, 64),

@@ -2,13 +2,14 @@ package cmd
 
 import (
 	"errors"
-	"github.com/spf13/cobra"
 	"goshm/caller"
 	"goshm/executors"
+	"goshm/exporter"
 	"goshm/models"
 	"goshm/utils"
-	"goshm/writer"
 	"strings"
+
+	"github.com/spf13/cobra"
 )
 
 func fetchCmd() *cobra.Command {
@@ -20,7 +21,7 @@ func fetchCmd() *cobra.Command {
 	cmd.PersistentFlags().String("code", "", "kode emiten")
 	cmd.PersistentFlags().String("date_from", "", "date from")
 	cmd.PersistentFlags().String("date_to", "", "date to")
-	cmd.PersistentFlags().String("output", string(writer.OutputCSV), "date to")
+	cmd.PersistentFlags().String("output", string(exporter.OutputCSV), "date to")
 	return cmd
 }
 
@@ -51,9 +52,9 @@ func fetchCmdHandler(cmd *cobra.Command, args []string) error {
 
 	outputReq := cmd.Flag("output").Value.String()
 
-	writer, ok := writer.Generator[models.Output(outputReq)]
+	writer, ok := exporter.Type[models.Output(outputReq)]
 	if !ok {
-		return errors.New("generator not exist")
+		return errors.New("generator not exist. Please use either csv or json")
 	}
 
 	shm := executors.New()

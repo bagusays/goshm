@@ -1,4 +1,4 @@
-package writer
+package exporter
 
 import (
 	"encoding/csv"
@@ -12,7 +12,7 @@ type csvWriter struct {
 	filename string
 }
 
-func Csv() Writer {
+func Csv() Exporter {
 	return &csvWriter{}
 }
 
@@ -23,7 +23,7 @@ func (c *csvWriter) Generate(param models.FetchArgs, data []models.CallResponse)
 		{"date", "open", "close", "low", "high"},
 	}
 	for _, d := range data {
-		date := utils.ToReadableDate(utils.UnixToDate(d.Date/1000))
+		date := utils.ToReadableDate(utils.UnixToDate(d.Date / 1000))
 		tmp := []string{date, d.OpenPrice, d.ClosePrice, d.LowPrice, d.HighPrice}
 		records = append(records, tmp)
 	}

@@ -2,24 +2,25 @@ package executors
 
 import (
 	"errors"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/mock"
 	"goshm/mocks"
 	"goshm/models"
 	"net/http"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/mock"
 )
 
 func TestGoShm_Fetch(t *testing.T) {
 	timeNow := time.Now()
 	testCases := []struct {
-		Name string
+		Name           string
 		MockCallerResp []models.CallResponse
-		MockCallerErr error
-		MockWriterErr error
+		MockCallerErr  error
+		MockWriterErr  error
 		ParamFetchArgs models.FetchArgs
-		ExpectedError bool
+		ExpectedError  bool
 	}{
 		{
 			Name: "Success",
@@ -41,10 +42,10 @@ func TestGoShm_Fetch(t *testing.T) {
 			},
 		},
 		{
-			Name: "Caller error",
+			Name:           "Caller error",
 			MockCallerResp: nil,
-			MockCallerErr: errors.New("unexpected error"),
-			MockWriterErr: nil,
+			MockCallerErr:  errors.New("unexpected error"),
+			MockWriterErr:  nil,
 			ParamFetchArgs: models.FetchArgs{
 				Code:     "ASII",
 				DateFrom: &timeNow,

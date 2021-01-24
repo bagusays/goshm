@@ -13,9 +13,9 @@ type FetchArgs struct {
 }
 
 type CallResponse struct {
-	Date int64
-	OpenPrice string
+	Date       int64
+	OpenPrice  string
 	ClosePrice string
-	HighPrice string
-	LowPrice string
+	HighPrice  string
+	LowPrice   string
 }
